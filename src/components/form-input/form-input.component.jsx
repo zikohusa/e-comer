@@ -1,9 +1,9 @@
 import React from "react";
 import "./form-input.styles.scss"
 
-const FormInput = ({onChange, label, ...otherProps}) => (
+const FormInput = ({label, ...otherProps}) => (
     <div className="group">
-        <input className="form-input" onChange={onChange} {...otherProps}/>
+        <input className="form-input" {...otherProps}/>
         {
             label ?
                 (<label className={ `form-input-label ${otherProps.value.length ? "shrink" : ""}` }>
